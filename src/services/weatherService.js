@@ -36,4 +36,3 @@ export const fetchWeatherByCoords = async (lat, lon, unit = 'metric') => {
 
   return { weather: weatherData, forecast: forecastData };
 };
-
