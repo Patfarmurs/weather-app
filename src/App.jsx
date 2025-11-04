@@ -7,7 +7,7 @@ import CurrentWeatherCard from './components/CurrentWeatherCard';
 import WeatherDetailsGrid from './components/WeatherDetailsGrid';
 import ForecastSection from './components/ForecastSection';
 import Footer from './components/Footer';
-import { getBackgroundGradient } from './utils/weatherIcons';
+import { getBackgroundClass } from './utils/weatherIcons';
 import { fetchWeatherByCity, fetchWeatherByCoords } from './services/weatherService';
 import './App.css';
 
@@ -82,8 +82,8 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${getBackgroundGradient(weather)} transition-all duration-1000 p-4 md:p-8`}>
-      <div className="max-w-6xl mx-auto">
+    <div className={`app-container ${getBackgroundClass(weather)}`}>
+      <div className="content-wrapper">
         <Header />
         <SearchBar city={city} setCity={setCity} onSearch={handleSearch} />
         <ErrorMessage message={error} />
@@ -91,7 +91,7 @@ function App() {
         {loading ? (
           <LoadingSpinner />
         ) : weather ? (
-          <div className="space-y-6">
+          <div className="weather-content">
             <CurrentWeatherCard 
               weather={weather} 
               unit={unit} 
@@ -101,7 +101,7 @@ function App() {
             {forecast && <ForecastSection forecast={forecast} />}
           </div>
         ) : (
-          <div className="text-center text-white/80 text-lg">
+          <div className="loading-text">
             Loading weather data...
           </div>
         )}

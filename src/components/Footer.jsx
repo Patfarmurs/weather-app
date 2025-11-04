@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="text-center mt-8 text-white/60 text-sm">
+    <div className="footer">
       <p>Powered by OpenWeatherMap API</p>
     </div>
   );

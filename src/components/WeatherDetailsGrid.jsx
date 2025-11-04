@@ -4,7 +4,7 @@ import WeatherDetailCard from './WeatherDetailCard';
 
 const WeatherDetailsGrid = ({ weather, unit }) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="details-grid">
       <WeatherDetailCard 
         icon={Wind} 
         label="Wind Speed" 

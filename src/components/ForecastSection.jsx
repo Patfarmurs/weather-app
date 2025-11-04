@@ -14,9 +14,9 @@ const ForecastSection = ({ forecast }) => {
   };
 
   return (
-    <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
-      <h2 className="text-2xl font-bold text-white mb-6">5-Day Forecast</h2>
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+    <div className="forecast-section">
+      <h2 className="forecast-title">5-Day Forecast</h2>
+      <div className="forecast-grid">
         {getDailyForecast().map((day, index) => (
           <ForecastCard key={index} day={day} />
         ))}
