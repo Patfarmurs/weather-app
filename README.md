@@ -2,7 +2,7 @@
 
 A modern, responsive weather forecast application built with React and Tailwind CSS. This application provides real-time weather data and 5-day forecasts for locations worldwide, featuring an intuitive user interface with dynamic backgrounds that adapt to current weather conditions.
 
-![Weather App Demo](./demo-screenshot.png)
+![Weather App Demo](./assets/demo-screenshot.png)
 
 ## 🌟 Features
 
@@ -201,7 +201,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Patrick Mukula**
-- GitHub: [@yourusername](https://github.com/Patfarmurs)
+- GitHub: [Patfarmurs](https://github.com/Patfarmurs)
 
 
 ## 🙏 Acknowledgments
