@@ -24,7 +24,7 @@ A modern, responsive weather forecast application built with React and Tailwind 
 
 ## 🚀 Live Demo
 
-[View Live Demo](#) _(Add your deployed application link here)_
+[View Live Demo](#) _(https://weatheraccu.netlify.app/)_
 
 ## 📸 Screenshots
 
